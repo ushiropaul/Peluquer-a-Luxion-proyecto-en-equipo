@@ -22,9 +22,11 @@
     <header>
             <nav class="navbar navegacion navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid contenedorFluido">
-                <a class="navbar-brand NavLogo" href="./index.html">
-                    <img src="./img/logo.png" alt="logo de la página de la Peluquería de Luxion.">
-                </a>
+                    <a class="navbar-brand NavLogo" href="./index.html">
+                        <div class="tituloHeader">
+                            <h3>LUXION</h3>
+                        </div>
+                    </a>
                 <button class="navbar-toggler botonMenu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon IconMenu">
                         <img src="./img/menu.png" alt="menu desplegable de la barra de navegación de la página">
@@ -69,7 +71,7 @@
                 </svg>
             </a>
         </div>
-        <!-- en esta seccion el usuario va a poder registrarse. IMPORTANTE: esta seccion debera dejar de aparecer si el usuario ya está registrado. -->
+        <!-- en esta seccion el usuario va a poder registrarse.-->
         <section class="registro" id="registrarseSection">
             <div class="contenedorForm">
                 <div class="tituloForm">
@@ -135,12 +137,26 @@
                 <div>
                     <h2>Conocé mí peluquería</h2>
                 </div>
-                <div class="contenedorCalendario">
-                    <h3>Días y horario laboral</h3>
+                <div class="contenedorInfo">
+                    <div class="textoInfo">
+                        <div class="horarioLaboral">
+                            <h3>Días y horario laboral</h3>
+                            <div class="contenedorCalendario">
+                                <span>De lunes a viernes, de 7am a 10pm</span>
+                            </div>
+                        </div>
+                        <div class="direccion">
+                            <h3>Dirección</h3>
+                            <a href="https://www.google.com/maps/place/Irala+2618,+Quilmes+Oeste,+Provincia+de+Buenos+Aires/@-34.7466832,-58.2809341,21z/data=!4m15!1m8!3m7!1s0x95a32dd5595c6d45:0x44620dbbfbe47578!2sIrala+2618,+Quilmes+Oeste,+Provincia+de+Buenos+Aires!3b1!8m2!3d-34.7466859!4d-58.2808059!16s%2Fg%2F11vrtj82zt!3m5!1s0x95a32dd5595c6d45:0x44620dbbfbe47578!8m2!3d-34.7466859!4d-58.2808059!16s%2Fg%2F11vrtj82zt?entry=ttu" target="_blank">
+                                <span>Irala 2618, Quilmes Oeste</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contenedorMapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d204.89710321855708!2d-58.28093413558077!3d-34.74668318133246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32dd5595c6d45%3A0x44620dbbfbe47578!2sIrala%202618%2C%20Quilmes%20Oeste%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1715024376491!5m2!1ses!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
-                <div class="direccion">
-                    <h3>Dirección</h3>
-                </div>
+                
             </article>
             <article class="Lucas" id="lucasInfo">
                 <div>
