@@ -1,7 +1,8 @@
 :root{
     --orange-color: #aa6131;
     --blue-secundary-color: #3161aa;
-    --black-color: #100806;
+    --black-color: #0e0705;
+    --black-secundary-color: #12121a;
     --beige-color: #f0dfd3;
     --white-color: #fff;
 }
@@ -83,22 +84,22 @@ body{
 
 
 /* MAIN /////////////////////////////////////////////////////////////////////////////////////////*/
-main {
 
-}
+/* div titulo */
 .mainIndex .titulo{
     display: flex;
     justify-content: center;
     flex-direction: column;
     z-index: -999;
-    height: 700px;
+    height: 100vh;
     margin-bottom: 100px;
 }
-.mainIndex .titulo img{
+.mainIndex .titulo .flechaAbajo{
     display: flex;
-    width: 100%;
-    position: relative;
-    z-index: -999;
+    background-color: transparent;
+    border: none;
+    justify-content: center;
+    align-content: end;
 }
 .mainIndex .titulo .tituloTexto{
     background: transparent;
@@ -110,12 +111,89 @@ main {
     z-index: -999;
 }
 .mainIndex .titulo .tituloTexto h1{
-    font-size: 5rem;
+    font-size: 2.5rem;
     font-weight: 700;
+}
+.mainIndex .titulo .tituloTexto h3{
+    color: var(--blue-secundary-color);
+}
+.mainIndex .titulo .tituloTexto h1 .barra{
+    color: var(--blue-secundary-color);
 }
 
 
-/* MEDIA QUERIES  */
+/* section registro */
+.registro{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.registro .contenedorForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.registro .contenedorForm .tituloForm h2{
+    font-size: 1.7rem;
+    padding: .3rem;
+}
+.registro .contenedorForm .tituloForm h2 span{
+    color: var(--blue-secundary-color);
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-left: .4rem;
+}
+
+.registro .contenedorForm form {
+    margin-top: 1rem;
+    background: var(--black-secundary-color);
+    width: 100%;
+    padding: 2rem 0;
+} 
+
+.registro .contenedorForm form .contenedorDivsForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.registro .contenedorForm form  div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.registro .contenedorForm form  div input{
+    padding: .6rem;
+    border: 1px solid var(--blue-secundary-color);
+    background-color: transparent;
+    color: white;
+    margin-top: .5rem;
+    margin-right: .7rem;
+    border-radius: .5rem 0 .5rem;
+}
+.registro .contenedorForm form  div input:focus{
+    background-color: #4069a7d0;
+    font-weight: 700;
+    outline: none;
+}
+
+.botonEnviar{
+    width: 200px;
+}
+.registro .contenedorForm form  div .botonEnviar:hover{
+    transition: all .4s;
+    background-color: var(--blue-secundary-color);
+    color: var(--black-color);
+}
+
+
+
+/* MEDIA QUERIES  ////////////////////////////////////////////////////////////////////*/
 
 /* MEDIA QUERY DESKTOP PARA HEADER */
 @media screen and (min-width: 970px){
@@ -139,29 +217,44 @@ main {
         transition: all .3s;
     }
 }
+
+
 /* MEDIA QUERY DESKTOP PARA MAININDEX */
-@media screen and (min-width: 967px){
-    .mainIndex .titulo{
-        background-image: url(./../img/background-index-main-desktop.webp);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-    .mainIndex .titulo img{
-        display: none;
-    }
-    .mainIndex .titulo .tituloTexto{
+@media screen and (min-width: 980px){
+    /* titulo div */
+    .titulo .tituloTexto{
         z-index: 2;
-        background: var(--beige-color);
         padding: 2rem 7rem;
         border-radius: 30px;
+        width: 100vw;
     }
-    .mainIndex .titulo .tituloTexto h1{
+    .titulo .tituloTexto h1{
         font-size: 7rem;
         font-weight: 700;
-        color: var(--black-color);
+        color: var(--white-color);
     }
-    .mainIndex .titulo .tituloTexto h3{
-        color: var(--blue-secundary-color);
+
+    /* form */
+    .registro .contenedorForm form{
+        width: 80vw;
+        height: 600px;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .registro .contenedorForm form  div{
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .registro .contenedorForm form  div input{
+        width: 70%;
+    }
+    .registro .contenedorForm form  div .botonEnviar{
+        width: 20%;
     }
 }

@@ -33,9 +33,6 @@
                 <div class="collapse navbar-collapse BarraDeNavegacionColapsada" id="navbarNav">
                     <ul class="navbar-nav ulNav">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#utilidadesSection">Ventajas</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#informacionDelLocal">Horarios e info</a>
                     </li>
                     <li class="nav-item">
@@ -58,35 +55,50 @@
     <!-- main index  -->
     <main class="mainIndex">
         <div class="titulo">
-            <img src="./img/iconoTijeras.png" alt="">
             <div class="tituloTexto">
-                <h1>LUXION</h1>
+                <h1>
+                    <span class="barra">|</span> 
+                    LUXION
+                    <span class="barra">|</span>
+                </h1>
                 <h3>Peluquería <span class="typed"></span></h3>
             </div>
+            <a class="flechaAbajo" href="#registrarseSection">
+                <svg xmlns="http://www.w3.org/2000/svg" width="4rem" height="4rem" fill="#fff" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+                </svg>
+            </a>
         </div>
         <!-- en esta seccion el usuario va a poder registrarse. IMPORTANTE: esta seccion debera dejar de aparecer si el usuario ya está registrado. -->
         <section class="registro" id="registrarseSection">
             <div class="contenedorForm">
-                <h3>Registrate en <span>Barberia Lucas</span> para poder <br> pedír un turno.</h3>
+                <div class="tituloForm">
+                    <h2>Registrate en <span>Luxion</span></h2>
+                    <h3> para pedír un turno.</h3>
+                </div>
                 <form action="#" method="#">
-                    <div class="nombreUsuario">
-                        <input type="text" name="userFirstName" id="userFirstName" placeholder="Tu nombre" required>
-                        <input type="text" name="userLastName" id="userLastName" placeholder="Tu apellido" required>
+                    <div class="contenedorDivsForm">
+                        <div class="nombreUsuario">
+                            <input type="text" name="userFirstName" id="userFirstName" placeholder="Tu nombre" required>
+                            <input type="text" name="userLastName" id="userLastName" placeholder="Tu apellido" required>
+                        </div>
+                        <div class="datosDeContacto">
+                            <input type="email" name="emailUser" id="emailUser" placeholder="Correo electrónico" required>
+                            <input type="tel" name="userPhone" id="userPhone" placeholder="Teléfono (opcional)">
+                        </div>
+                        <div class="contraseña">
+                            <input type="password" name="userPassword" id="userPassword" placeholder="Crea una contraseña" required>
+                            <input type="text" name="confirmUserPassword" id="confirmUserPassword" placeholder="Confirmá la contraseña" required>
+                        </div>
+                        <div class="enviar">
+                            <input class="botonEnviar" type="submit" value="Enviar">
+                        </div>
                     </div>
-                    <div class="datosDeContacto">
-                        <input type="email" name="emailUser" id="emailUser" placeholder="Correo electrónico" required>
-                        <input type="tel" name="userPhone" id="userPhone" placeholder="Teléfono (opcional)">
-                    </div>
-                    <div class="contraseña">
-                        <input type="password" name="userPassword" id="userPassword" placeholder="Crea una contraseña" required>
-                        <input type="text" name="confirmUserPassword" id="confirmUserPassword" placeholder="Confirmá la contraseña" required>
-                    </div>
-                    <input type="submit" value="Enviar">
                 </form>
             </div>
         </section>
         <!-- en esta seccion el usuario puede ver las utilidades de la pagina, que podra hacer con ella y  -->
-        <section class="utilidades" id="utilidadesSection">
+        <!-- <section class="utilidades" id="utilidadesSection">
             <article class="contenedorUtilidades">
                 <div class="utilidad utilidad1">
                     <img src="#" alt="imagen para la seccion de utilidades de la página. Imagen de un calendario">
@@ -116,7 +128,7 @@
                     </div>
                 </div>
             </article>
-        </section>
+        </section> -->
         <!-- en esta seccion el usuario puede ver quien es Lucas y como es su barberia. Podrá ver los horarios, direccion, etc -->
         <section class="introduccion">
             <article class="infoLocal" id="informacionDelLocal">
@@ -130,7 +142,7 @@
                     <h3>Dirección</h3>
                 </div>
             </article>
-            <article class="Lucas" id="LucasInfo">
+            <article class="Lucas" id="lucasInfo">
                 <div>
                     <h2>¡Hola! Soy <span>Lucas</span></h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloribus illum </p>
@@ -153,7 +165,7 @@
                     <h3>Categorías</h3>
                 </div>
                 <div class="containerGallery">
-                    <h3>Mirá los <span>resultados</span> - poner emoji canchero -</h3>
+                    <h3>Mirá los <span>resultados</span> 😎</h3>
                     <!-- carrusel -->
                     
                 </div>
