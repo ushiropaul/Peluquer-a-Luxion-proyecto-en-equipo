@@ -264,17 +264,63 @@ body{
     padding: 1rem;
 }
 .introduccion .Lucas{
-    border: 1px solid white;
+    height: 100vh;
+    padding-top: 5rem;
 }
+.introduccion .Lucas .imagenLucasDiv{
+    border: 2px solid var(--blue-secundary-color);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+.introduccion .Lucas div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+}
+.introduccion .Lucas div h2{
+    text-align: center;
+    font-size: 1.7rem;
+}
+
 
 .introduccion .contacto{
-    border: 1px solid white;
+    height: 100vh;
+    padding-top: 4rem;
+}
+.introduccion .contacto div #whatsappForm{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100vw;
+}
+.introduccion .contacto div #whatsappForm #mensaje{
+    width: 100%;
+    background-color: var(--black-secundary-color);
+    border: 1px solid var(--blue-secundary-color);
+    padding: .5rem;
+    color: var(--white-color);
+}
+.introduccion .contacto div #whatsappForm #mensaje:focus{
+    outline: none;
+}
+.introduccion .Servicios{
+    height: 100vh;
 
 }
 
-.introduccion .Servicios{
-    border: 1px solid white;
-
+/* section reservar */
+.reservar{
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
